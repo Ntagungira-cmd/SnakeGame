@@ -6,14 +6,14 @@ public class DataOfSquare {
 	
 	//ArrayList that'll contain the colors
 	ArrayList<Color> C =new ArrayList<Color>();
-	int color; //2: snake , 1: food, 0:empty 
+	int color; //0: snake , 1: food, 2:empty
 	SquarePanel square;
 	public DataOfSquare(int col){
 		
 		//Lets add the color to the arrayList
-		C.add(Color.darkGray);//0
-		C.add(Color.BLUE);    //1
-		C.add(Color.white);   //2
+		C.add(Color.LIGHT_GRAY);//0
+		C.add(Color.ORANGE);    //1
+		C.add(Color.WHITE);   //2
 		color=col;
 		square = new SquarePanel(C.get(color));
 	}

@@ -61,7 +61,7 @@ public class ThreadsController extends Thread {
 		 
 		 boolean eatingFood = posCritique.getX()==foodPosition.y && posCritique.getY()==foodPosition.x;
 		 if(eatingFood){
-			 System.out.println("Yummy!");
+			 System.out.println("tasty!");
 			 sizeSnake=sizeSnake+1;
 			 	foodPosition = getValAleaNotInSnake();
 
@@ -71,7 +71,7 @@ public class ThreadsController extends Thread {
 	 
 	 //Stops The Game
 	 private void stopTheGame(){
-		 System.out.println("COLISION! \n");
+		 System.out.println("COLIDED! \n");
 		 while(true){
 			 pauser();
 		 }
